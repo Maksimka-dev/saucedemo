@@ -1,0 +1,6 @@
+page_objects/LoginPage.java
+ page_objects.LoginPage
+utils/ConfProperties.java
+ utils.ConfProperties
+page_objects/ProductPage.java
+ page_objects.ProductPage
