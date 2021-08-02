@@ -11,7 +11,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class ProductPage {
-    private SelenideElement markerProductPage = $(byXpath("//span[@class='title']"));
     private SelenideElement shoppingCartBtn = $(byXpath("//a[@class='shopping_cart_link']"));
     private ElementsCollection productsCollection = $$(byXpath("//div[@class='inventory_item']"));
 
@@ -24,8 +23,5 @@ public class ProductPage {
         }
 
     }
-    public boolean isProductPage(){
-        markerProductPage.shouldBe(Condition.visible);
-        return markerProductPage.text().equals(ConfProperties.getProperty("product_page_marker"));
-    }
+
 }
