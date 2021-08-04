@@ -4,3 +4,13 @@ utils/ConfProperties.java
  utils.ConfProperties
 page_objects/ProductPage.java
  page_objects.ProductPage
+page_elements/TitleElement.java
+ page_elements.TitleElement
+value_objects/Customer.java
+ value_objects.Customer
+page_objects/CheckoutInformationPage.java
+ page_objects.CheckoutInformationPage
+page_objects/ShoppingCartPage.java
+ page_objects.ShoppingCartPage
+page_objects/OverviewPage.java
+ page_objects.OverviewPage

@@ -18,12 +18,17 @@ public class ShoppingCartPage {
 
     public void clickCheckoutBtn(){ checkoutBtn.click(); }
 
-    public Integer checkFullPrice(){
-        Integer result = 0;
+    public void waitShoppingCartPage(){
+        continueShoppingBtn.shouldBe(Condition.visible);
+    }
+
+    public Double getFullPrice(){
+        Double result = 0.0;
 
         for(int i = 0; i < productsIntoCartCollection.size(); i++){
-            Integer currentProductPrice = 0;
-            currentProductPrice = Integer.parseInt(productsIntoCartCollection.get(i).$(byXpath("//div[@class='inventory_item_price']"))
+            Double currentProductPrice = 0.0;
+            currentProductPrice = Double.parseDouble(productsIntoCartCollection.get(i)
+                    .$(byXpath("descendant::div[@class='inventory_item_price']"))
                     .text().replace("$",""));
             result += currentProductPrice;
         }

@@ -24,4 +24,9 @@ public class TitleElement {
         return markerPages.text().equals(ConfProperties.getProperty("checkout_information_page_marker"));
     }
 
+    public boolean isOverviewPage(){
+        markerPages.shouldBe(Condition.visible);
+        return markerPages.text().equals(ConfProperties.getProperty("overview_page_marker"));
+    }
+
 }

@@ -1,5 +1,6 @@
 package page_objects;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import value_objects.Customer;
 
@@ -12,6 +13,10 @@ public class CheckoutInformationPage {
     private SelenideElement postalCodeField = $(byXpath("//input[@data-test='postalCode']"));
     private SelenideElement continueBtn = $(byXpath("//input[@data-test='continue']"));
     private SelenideElement cancelBtn = $(byXpath("//button[@data-test='cancel']"));
+
+    public void waitCheckoutInformationPage(){
+        cancelBtn.shouldBe(Condition.visible);
+    }
 
     private void setFirstNameField(String text) { firstNameField.sendKeys(text); }
 
