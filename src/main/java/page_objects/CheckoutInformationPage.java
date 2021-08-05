@@ -3,7 +3,6 @@ package page_objects;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import value_objects.Customer;
-
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
 

@@ -140,6 +140,7 @@ public class Tests {
 
     @Test
     @Order(3)
+    @Disabled("Не реализовано")
     public void priceCompareTest(){
         Double price = 0.0;
         Double itemPrice = 0.0;
