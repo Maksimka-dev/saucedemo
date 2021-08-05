@@ -1,16 +1,22 @@
 page_objects/LoginPage.java
  page_objects.LoginPage
-utils/ConfProperties.java
- utils.ConfProperties
+page_elements/BurgerMenu.java
+ page_elements.BurgerMenu
+page_objects/CheckoutInformationPage.java
+ page_objects.CheckoutInformationPage
+value_objects/Customer.java
+ value_objects.Customer
+page_objects/CompletePage.java
+ page_objects.CompletePage
+utils/Log.java
+ utils.Log
 page_objects/ProductPage.java
  page_objects.ProductPage
 page_elements/TitleElement.java
  page_elements.TitleElement
-value_objects/Customer.java
- value_objects.Customer
-page_objects/CheckoutInformationPage.java
- page_objects.CheckoutInformationPage
-page_objects/ShoppingCartPage.java
- page_objects.ShoppingCartPage
 page_objects/OverviewPage.java
  page_objects.OverviewPage
+utils/ConfProperties.java
+ utils.ConfProperties
+page_objects/ShoppingCartPage.java
+ page_objects.ShoppingCartPage

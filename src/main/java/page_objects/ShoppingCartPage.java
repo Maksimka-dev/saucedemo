@@ -22,6 +22,12 @@ public class ShoppingCartPage {
         continueShoppingBtn.shouldBe(Condition.visible);
     }
 
+    public void deleteAllProducts(){
+        for (int i = productsIntoCartCollection.size() - 1; i >= 0; i--){
+            productsIntoCartCollection.get(i).$(byXpath("descendant::button")).click();
+        }
+    }
+
     public Double getFullPrice(){
         Double result = 0.0;
 
@@ -33,6 +39,10 @@ public class ShoppingCartPage {
             result += currentProductPrice;
         }
         return result;
+    }
+
+    public boolean isClearListProducts(){
+        return productsIntoCartCollection.size() == 0;
     }
 
 }

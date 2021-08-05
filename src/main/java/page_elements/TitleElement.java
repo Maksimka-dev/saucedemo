@@ -29,4 +29,9 @@ public class TitleElement {
         return markerPages.text().equals(ConfProperties.getProperty("overview_page_marker"));
     }
 
+    public boolean isCompletePage(){
+        markerPages.shouldBe(Condition.visible);
+        return markerPages.text().equals(ConfProperties.getProperty("complete_page_marker"));
+    }
+
 }
