@@ -4,8 +4,8 @@ page_elements/BurgerMenu.java
  page_elements.BurgerMenu
 page_objects/CheckoutInformationPage.java
  page_objects.CheckoutInformationPage
-value_objects/Customer.java
- value_objects.Customer
+page_objects/ShoppingCartPage.java
+ page_objects.ShoppingCartPage
 page_objects/CompletePage.java
  page_objects.CompletePage
 utils/Log.java
@@ -18,5 +18,5 @@ page_objects/OverviewPage.java
  page_objects.OverviewPage
 utils/ConfProperties.java
  utils.ConfProperties
-page_objects/ShoppingCartPage.java
- page_objects.ShoppingCartPage
+value_objects/Customer.java
+ value_objects.Customer
