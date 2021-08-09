@@ -1,6 +1,8 @@
 org/example/RunnerTest.java
  org.example.RunnerTest
-org/example/Tests.java
- org.example.Tests
 org/example/TestSuite.java
  org.example.TestSuite
+org/example/Tests.java
+ org.example.Tests
+org/example/steps/BuyProductStepsDef.java
+ org.example.steps.BuyProductStepsDef

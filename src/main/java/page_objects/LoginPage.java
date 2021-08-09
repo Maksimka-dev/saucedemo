@@ -11,11 +11,19 @@ public class LoginPage {
     private SelenideElement password = $(byXpath("//input[@data-test='password']"));
     private SelenideElement loginBtn = $(byXpath("//input[@data-test='login-button']"));
 
-    private void setUserName(String text) { userName.sendKeys(text); }
+    public void setUserName(String text) { userName.sendKeys(text); }
 
-    private void setPassword(String text) { password.sendKeys(text); }
+    public String getUserName() { return userName.getValue(); }
 
-    private void clickLoginBtn() { loginBtn.click(); }
+    public void setPassword(String text) { password.sendKeys(text); }
+
+    public String getPassword() { return password.getValue(); }
+
+    public void clickLoginBtn() { loginBtn.click(); }
+
+    public void waitLoginPage(){
+        userName.shouldBe(Condition.visible);
+    }
 
     public void login(){
         loginBtn.shouldBe(Condition.visible);

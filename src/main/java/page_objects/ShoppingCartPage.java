@@ -26,6 +26,19 @@ public class ShoppingCartPage {
         }
     }
 
+    public boolean isProductByName(String productName){
+        boolean result = false;
+
+        for(int i = 0; i < productsIntoCartCollection.size(); i++){
+            String name = productsIntoCartCollection.get(i)
+                    .$(byXpath("descendant::div[@class='inventory_item_name']")).text();
+            if(productName.equals(name)){
+                result = true;
+            }
+        }
+        return result;
+    }
+
     public Double getFullPrice(){
         Double result = 0.0;
 

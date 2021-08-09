@@ -17,11 +17,17 @@ public class CheckoutInformationPage {
         cancelBtn.shouldBe(Condition.visible);
     }
 
-    private void setFirstNameField(String text) { firstNameField.sendKeys(text); }
+    public void setFirstNameField(String text) { firstNameField.sendKeys(text); }
 
-    private void setLastNameField(String text) { lastNameField.sendKeys(text); }
+    public String getFirstNameField() { return firstNameField.getValue(); }
 
-    private void setPostalCodeField(String text) { postalCodeField.sendKeys(text); }
+    public void setLastNameField(String text) { lastNameField.sendKeys(text); }
+
+    public String getLastNameField() { return lastNameField.getValue(); }
+
+    public void setPostalCodeField(String text) { postalCodeField.sendKeys(text); }
+
+    public String getPostalCodeField() { return postalCodeField.getValue(); }
 
     public void clickContinueBtn() { continueBtn.click(); }
 

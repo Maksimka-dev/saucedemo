@@ -21,6 +21,17 @@ public class ProductPage {
         }
     }
 
+    public void addProductToCartByName(String nameProduct){
+        for (int i = 0; i <  productsCollection.size(); i++){
+
+            String name = productsCollection.get(i).$(byXpath("descendant::div[@class='inventory_item_name']")).text();
+
+            if(nameProduct.equals(name)){
+                productsCollection.get(i).$(byXpath("descendant::button")).click();
+            }
+        }
+    }
+
     public void waitProductPage(){
         blockOfProducts.shouldBe(Condition.visible);
     }
