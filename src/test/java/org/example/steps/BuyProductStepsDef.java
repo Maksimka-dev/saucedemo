@@ -3,8 +3,6 @@ package org.example.steps;
 import io.cucumber.java.ru.Допустим;
 import io.cucumber.java.ru.Когда;
 import io.cucumber.java.ru.Тогда;
-import page_elements.BurgerMenu;
-import page_elements.TitleElement;
 import page_objects.*;
 
 import static com.codeborne.selenide.Selectors.byXpath;
@@ -18,12 +16,9 @@ public class BuyProductStepsDef {
 
     private LoginPage logIn = new LoginPage();
     private ProductPage productPage = new ProductPage();
-    private TitleElement titleElement = new TitleElement();
     private ShoppingCartPage shoppingCartPage = new ShoppingCartPage();
     private CheckoutInformationPage checkoutInformationPage = new CheckoutInformationPage();
     private OverviewPage overviewPage = new OverviewPage();
-    private CompletePage completePage = new CompletePage();
-    private BurgerMenu burgerMenu = new BurgerMenu();
 
     @Допустим("^открыта страница \"([^\"]*)\"$")
     public void pageOpen(String pageUrl) {

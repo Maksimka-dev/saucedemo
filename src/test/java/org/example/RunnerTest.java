@@ -9,7 +9,6 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = {"org.example.steps"},
         tags = "@test",
-//        dryRun = true,
         snippets = CucumberOptions.SnippetType.CAMELCASE)
 public class RunnerTest {
 
