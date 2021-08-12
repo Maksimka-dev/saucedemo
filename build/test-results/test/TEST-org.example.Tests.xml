@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.Tests" tests="5" skipped="1" failures="0" errors="0" timestamp="2021-08-11T11:41:28" hostname="DESKTOP-PQ2APH8" time="10.742">
+<testsuite name="org.example.Tests" tests="5" skipped="1" failures="0" errors="0" timestamp="2021-08-12T07:58:50" hostname="DESKTOP-PQ2APH8" time="19.886">
   <properties/>
-  <testcase name="buyTest()" classname="org.example.Tests" time="5.308"/>
-  <testcase name="loginTest()" classname="org.example.Tests" time="1.764"/>
-  <testcase name="priceCompareTest()" classname="org.example.Tests" time="0.001">
+  <testcase name="buyTest()" classname="org.example.Tests" time="11.408"/>
+  <testcase name="loginTest()" classname="org.example.Tests" time="1.972"/>
+  <testcase name="priceCompareTest()" classname="org.example.Tests" time="0.002">
     <skipped/>
   </testcase>
-  <testcase name="cancelBuyTest()" classname="org.example.Tests" time="2.194"/>
-  <testcase name="deleteProductsCartTest()" classname="org.example.Tests" time="1.471"/>
-  <system-out><![CDATA[2021-08-11 14:41:31 INFO  Log:25 - Р’С…РѕРґ РІС‹РїРѕР»РЅРµРЅ
-2021-08-11 14:41:31 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° С‚РѕРІР°СЂРѕРІ Р·Р°РіСЂСѓР¶РµРЅР°
-2021-08-11 14:41:32 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РєРѕСЂР·РёРЅС‹ С‚РѕРІР°СЂРѕРІ Р·Р°РіСЂСѓР¶РµРЅР°
-2021-08-11 14:41:32 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РІР°Р»РёРґР°С†РёРё РєР»РёРµРЅС‚Р° Р·Р°РіСЂСѓР¶РµРЅР°
-2021-08-11 14:41:32 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ Р·Р°РєР°Р·Р° Р·Р°РіСЂСѓР¶РµРЅР°
-2021-08-11 14:41:33 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° Р·Р°РІРµСЂС€РµРЅРёСЏ Р·Р°РєР°Р·Р° Р·Р°РіСЂСѓР¶РµРЅР°
-2021-08-11 14:41:33 INFO  Log:25 - РџРѕРєСѓРїРєР° Р·Р°РІРµСЂС€РµРЅР°
-2021-08-11 14:41:35 INFO  Log:25 - Р’С…РѕРґ РІС‹РїРѕР»РЅРµРЅ
-2021-08-11 14:41:36 INFO  Log:25 - Р’С…РѕРґ РІС‹РїРѕР»РЅРµРЅ
-2021-08-11 14:41:36 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° С‚РѕРІР°СЂРѕРІ Р·Р°РіСЂСѓР¶РµРЅР°
-2021-08-11 14:41:36 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РєРѕСЂР·РёРЅС‹ С‚РѕРІР°СЂРѕРІ Р·Р°РіСЂСѓР¶РµРЅР°
-2021-08-11 14:41:36 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РІР°Р»РёРґР°С†РёРё РєР»РёРµРЅС‚Р° Р·Р°РіСЂСѓР¶РµРЅР°
-2021-08-11 14:41:37 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ Р·Р°РєР°Р·Р° Р·Р°РіСЂСѓР¶РµРЅР°
-2021-08-11 14:41:37 INFO  Log:25 - РћС‚РјРµРЅР° РїРѕРєСѓРїРєРё РїСЂРѕС€Р»Р° СѓСЃРїРµС€РЅРѕ
-2021-08-11 14:41:38 INFO  Log:25 - Р’С…РѕРґ РІС‹РїРѕР»РЅРµРЅ
-2021-08-11 14:41:38 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° С‚РѕРІР°СЂРѕРІ Р·Р°РіСЂСѓР¶РµРЅР°
-2021-08-11 14:41:38 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РєРѕСЂР·РёРЅС‹ С‚РѕРІР°СЂРѕРІ Р·Р°РіСЂСѓР¶РµРЅР°
-2021-08-11 14:41:38 INFO  Log:25 - РљРѕСЂР·РёРЅР° РїСѓСЃС‚Р°
+  <testcase name="cancelBuyTest()" classname="org.example.Tests" time="3.839"/>
+  <testcase name="deleteProductsCartTest()" classname="org.example.Tests" time="2.653"/>
+  <system-out><![CDATA[2021-08-12 10:58:58 INFO  Log:25 - Р’С…РѕРґ РІС‹РїРѕР»РЅРµРЅ
+2021-08-12 10:58:58 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° С‚РѕРІР°СЂРѕРІ Р·Р°РіСЂСѓР¶РµРЅР°
+2021-08-12 10:58:59 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РєРѕСЂР·РёРЅС‹ С‚РѕРІР°СЂРѕРІ Р·Р°РіСЂСѓР¶РµРЅР°
+2021-08-12 10:58:59 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РІР°Р»РёРґР°С†РёРё РєР»РёРµРЅС‚Р° Р·Р°РіСЂСѓР¶РµРЅР°
+2021-08-12 10:59:00 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ Р·Р°РєР°Р·Р° Р·Р°РіСЂСѓР¶РµРЅР°
+2021-08-12 10:59:00 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° Р·Р°РІРµСЂС€РµРЅРёСЏ Р·Р°РєР°Р·Р° Р·Р°РіСЂСѓР¶РµРЅР°
+2021-08-12 10:59:01 INFO  Log:25 - РџРѕРєСѓРїРєР° Р·Р°РІРµСЂС€РµРЅР°
+2021-08-12 10:59:03 INFO  Log:25 - Р’С…РѕРґ РІС‹РїРѕР»РЅРµРЅ
+2021-08-12 10:59:05 INFO  Log:25 - Р’С…РѕРґ РІС‹РїРѕР»РЅРµРЅ
+2021-08-12 10:59:05 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° С‚РѕРІР°СЂРѕРІ Р·Р°РіСЂСѓР¶РµРЅР°
+2021-08-12 10:59:06 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РєРѕСЂР·РёРЅС‹ С‚РѕРІР°СЂРѕРІ Р·Р°РіСЂСѓР¶РµРЅР°
+2021-08-12 10:59:06 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РІР°Р»РёРґР°С†РёРё РєР»РёРµРЅС‚Р° Р·Р°РіСЂСѓР¶РµРЅР°
+2021-08-12 10:59:07 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ Р·Р°РєР°Р·Р° Р·Р°РіСЂСѓР¶РµРЅР°
+2021-08-12 10:59:07 INFO  Log:25 - РћС‚РјРµРЅР° РїРѕРєСѓРїРєРё РїСЂРѕС€Р»Р° СѓСЃРїРµС€РЅРѕ
+2021-08-12 10:59:08 INFO  Log:25 - Р’С…РѕРґ РІС‹РїРѕР»РЅРµРЅ
+2021-08-12 10:59:08 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° С‚РѕРІР°СЂРѕРІ Р·Р°РіСЂСѓР¶РµРЅР°
+2021-08-12 10:59:09 INFO  Log:25 - РЎС‚СЂР°РЅРёС†Р° РєРѕСЂР·РёРЅС‹ С‚РѕРІР°СЂРѕРІ Р·Р°РіСЂСѓР¶РµРЅР°
+2021-08-12 10:59:10 INFO  Log:25 - РљРѕСЂР·РёРЅР° РїСѓСЃС‚Р°
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 44661
+Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 33400
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-авг 11, 2021 2:41:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+авг 12, 2021 10:58:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
