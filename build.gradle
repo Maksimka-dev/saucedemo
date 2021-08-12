@@ -1,16 +1,13 @@
 plugins {
     id 'java'
+    id("io.qameta.allure") version "2.8.1"
 }
 
-compileJava.options.encoding = 'UTF-8'
-
-tasks {
-    compileJava {
-        options.encoding = "UTF-8"
-    }
-    compileTestJava {
-        options.encoding = "UTF-8"
-    }
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+tasks.withType(Test) {
+    systemProperty "file.encoding", "UTF-8"
 }
 
 group 'org.example'
