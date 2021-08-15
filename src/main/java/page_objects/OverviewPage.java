@@ -2,6 +2,8 @@ package page_objects;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import static com.codeborne.selenide.Selectors.byXpath;
@@ -12,14 +14,18 @@ public class OverviewPage {
     private SelenideElement cancelBtn = $(byXpath("//button[@data-test='cancel']"));
     private SelenideElement finishBtn = $(byXpath("//button[@data-test='finish']"));
 
+    @Step("Overview page is loaded")
     public void waitOverviewPage(){
         finishBtn.shouldBe(Condition.visible);
     }
 
+    @Step("Click 'Cancel' button")
     public void clickCancelBtn() { cancelBtn.click(); }
 
+    @Step("Click 'Finish' button")
     public void clickFinishBtn() { finishBtn.click(); }
 
+    @Step("Get total price of products on overview page")
     public Double getItemTotalPrice(){
         Double result = 0.0;
         String itemTotalPrice = totalPriceText.text();

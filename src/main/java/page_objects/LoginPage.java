@@ -2,6 +2,7 @@ package page_objects;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import utils.ConfProperties;
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
@@ -17,6 +18,7 @@ public class LoginPage {
 
     private void clickLoginBtn() { loginBtn.click(); }
 
+    @Step("Login")
     public void login(){
         loginBtn.shouldBe(Condition.visible);
         setUserName(ConfProperties.getProperty("username"));

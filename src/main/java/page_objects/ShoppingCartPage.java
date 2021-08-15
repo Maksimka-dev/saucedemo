@@ -3,6 +3,8 @@ package page_objects;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
+
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
@@ -12,20 +14,25 @@ public class ShoppingCartPage {
     private SelenideElement continueShoppingBtn = $(byXpath("//button[@id='continue-shopping']"));
     private SelenideElement checkoutBtn = $(byXpath("//button[@id='checkout']"));
 
+    @Step("Click 'Continue' button")
     public void clickContinueShoppingBtn(){ continueShoppingBtn.click(); }
 
+    @Step("Click 'Checkout' button")
     public void clickCheckoutBtn(){ checkoutBtn.click(); }
 
+    @Step("Shopping Cart page  is loaded")
     public void waitShoppingCartPage(){
         continueShoppingBtn.shouldBe(Condition.visible);
     }
 
+    @Step("Delete all products from cart")
     public void deleteAllProducts(){
         for (int i = productsIntoCartCollection.size() - 1; i >= 0; i--){
             productsIntoCartCollection.get(i).$(byXpath("descendant::button")).click();
         }
     }
 
+    @Step("Get full price of products into cart")
     public Double getFullPrice(){
         Double result = 0.0;
 

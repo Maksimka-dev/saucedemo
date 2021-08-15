@@ -2,6 +2,7 @@ package page_objects;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import value_objects.Customer;
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
@@ -13,6 +14,7 @@ public class CheckoutInformationPage {
     private SelenideElement continueBtn = $(byXpath("//input[@data-test='continue']"));
     private SelenideElement cancelBtn = $(byXpath("//button[@data-test='cancel']"));
 
+    @Step("Check Information page is loaded")
     public void waitCheckoutInformationPage(){
         cancelBtn.shouldBe(Condition.visible);
     }
@@ -23,10 +25,13 @@ public class CheckoutInformationPage {
 
     private void setPostalCodeField(String text) { postalCodeField.sendKeys(text); }
 
+    @Step("Click 'Continue' button")
     public void clickContinueBtn() { continueBtn.click(); }
 
+    @Step("Click 'Cancel' button")
     public void clickCancelBtn() { cancelBtn.click(); }
 
+    @Step("Entered customer date")
     public void enterCustomerDate(Customer customer) {
         setFirstNameField(customer.getFirstName());
         setLastNameField(customer.getLastName());

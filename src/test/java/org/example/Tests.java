@@ -1,6 +1,10 @@
 package org.example;
 
 import com.codeborne.selenide.Configuration;
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.*;
 import page_elements.BurgerMenu;
 import page_elements.TitleElement;
@@ -43,6 +47,9 @@ public class Tests {
         burgerMenu.clickLogoutBtn();
     }
 
+    @Severity(SeverityLevel.BLOCKER)
+    @Description("Login test")
+    @Feature("Login feature")
     @Test
     @Order(2)
     public void loginTest(){
@@ -51,6 +58,8 @@ public class Tests {
         Log.info("Вход выполнен");
     }
 
+    @Severity(SeverityLevel.BLOCKER)
+    @Description("Smoke buy test")
     @Test
     @Order(1)
     public void buyTest(){
@@ -87,6 +96,9 @@ public class Tests {
         Log.info("Покупка завершена");
     }
 
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Delete products from cart")
+    @Feature("Cart feature")
     @Test
     @Order(5)
     public void deleteProductsCartTest(){
@@ -105,6 +117,8 @@ public class Tests {
         Log.info("Корзина пуста");
     }
 
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Critical path test canceling buy")
     @Test
     @Order(4)
     public void cancelBuyTest(){
@@ -138,6 +152,9 @@ public class Tests {
         Log.info("Отмена покупки прошла успешно");
     }
 
+    @Severity(SeverityLevel.BLOCKER)
+    @Description("Compare price from cart and overview page")
+    @Feature("Count total price")
     @Test
     @Order(3)
     @Disabled("Не реализовано")
