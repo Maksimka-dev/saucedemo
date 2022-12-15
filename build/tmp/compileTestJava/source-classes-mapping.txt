@@ -1,4 +1,2 @@
 org/example/Tests.java
  org.example.Tests
-org/example/TestSuite.java
- org.example.TestSuite

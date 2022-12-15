@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.Tests" tests="5" skipped="1" failures="0" errors="0" timestamp="2021-08-12T10:47:01" hostname="DESKTOP-PQ2APH8" time="11.321">
+<testsuite name="org.example.Tests" tests="5" skipped="1" failures="0" errors="0" timestamp="2022-12-15T09:06:47" hostname="DESKTOP-6JJNF91" time="4.491">
   <properties/>
-  <testcase name="buyTest()" classname="org.example.Tests" time="4.601"/>
-  <testcase name="loginTest()" classname="org.example.Tests" time="2.456"/>
-  <testcase name="priceCompareTest()" classname="org.example.Tests" time="0.0">
+  <testcase name="priceCompareTest()" classname="org.example.Tests" time="0.001">
     <skipped/>
   </testcase>
-  <testcase name="cancelBuyTest()" classname="org.example.Tests" time="2.907"/>
-  <testcase name="deleteProductsCartTest()" classname="org.example.Tests" time="1.352"/>
-  <system-out><![CDATA[2021-08-12 13:47:04 INFO  Log:25 - Вход выполнен
-2021-08-12 13:47:04 INFO  Log:25 - Страница товаров загружена
-2021-08-12 13:47:04 INFO  Log:25 - Страница корзины товаров загружена
-2021-08-12 13:47:04 INFO  Log:25 - Страница валидации клиента загружена
-2021-08-12 13:47:05 INFO  Log:25 - Страница подтверждения заказа загружена
-2021-08-12 13:47:05 INFO  Log:25 - Страница завершения заказа загружена
-2021-08-12 13:47:05 INFO  Log:25 - Покупка завершена
-2021-08-12 13:47:08 INFO  Log:25 - Вход выполнен
-2021-08-12 13:47:09 INFO  Log:25 - Вход выполнен
-2021-08-12 13:47:09 INFO  Log:25 - Страница товаров загружена
-2021-08-12 13:47:10 INFO  Log:25 - Страница корзины товаров загружена
-2021-08-12 13:47:10 INFO  Log:25 - Страница валидации клиента загружена
-2021-08-12 13:47:10 INFO  Log:25 - Страница подтверждения заказа загружена
-2021-08-12 13:47:10 INFO  Log:25 - Отмена покупки прошла успешно
-2021-08-12 13:47:11 INFO  Log:25 - Вход выполнен
-2021-08-12 13:47:11 INFO  Log:25 - Страница товаров загружена
-2021-08-12 13:47:12 INFO  Log:25 - Страница корзины товаров загружена
-2021-08-12 13:47:12 INFO  Log:25 - Корзина пуста
+  <testcase name="loginTest()" classname="org.example.Tests" time="3.389"/>
+  <testcase name="deleteProductsCartTest()" classname="org.example.Tests" time="3.888"/>
+  <testcase name="buyTest()" classname="org.example.Tests" time="4.437"/>
+  <testcase name="cancelBuyTest()" classname="org.example.Tests" time="4.495"/>
+  <system-out><![CDATA[2022-12-15 12:06:49 INFO  Log:25 - Вход выполнен
+2022-12-15 12:06:49 INFO  Log:25 - Вход выполнен
+2022-12-15 12:06:49 INFO  Log:25 - Страница товаров загружена
+2022-12-15 12:06:49 INFO  Log:25 - Вход выполнен
+2022-12-15 12:06:49 INFO  Log:25 - Страница товаров загружена
+2022-12-15 12:06:50 INFO  Log:25 - Вход выполнен
+2022-12-15 12:06:50 INFO  Log:25 - Страница товаров загружена
+2022-12-15 12:06:50 INFO  Log:25 - Страница корзины товаров загружена
+2022-12-15 12:06:50 INFO  Log:25 - Страница корзины товаров загружена
+2022-12-15 12:06:50 INFO  Log:25 - Страница валидации клиента загружена
+2022-12-15 12:06:50 INFO  Log:25 - Корзина пуста
+2022-12-15 12:06:50 INFO  Log:25 - Страница корзины товаров загружена
+2022-12-15 12:06:50 INFO  Log:25 - Страница валидации клиента загружена
+2022-12-15 12:06:50 INFO  Log:25 - Страница подтверждения заказа загружена
+2022-12-15 12:06:51 INFO  Log:25 - Страница завершения заказа загружена
+2022-12-15 12:06:51 INFO  Log:25 - Страница подтверждения заказа загружена
+2022-12-15 12:06:51 INFO  Log:25 - Покупка завершена
+2022-12-15 12:06:51 INFO  Log:25 - Отмена покупки прошла успешно
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 45481
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 36198
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 9875
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-авг 12, 2021 1:47:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+ChromeDriver was started successfully.
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 45885
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 22247
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+дек. 15, 2022 12:06:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+дек. 15, 2022 12:06:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+дек. 15, 2022 12:06:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+дек. 15, 2022 12:06:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

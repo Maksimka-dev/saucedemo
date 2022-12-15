@@ -2,6 +2,9 @@ package org.example;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
+
 import page_elements.BurgerMenu;
 import page_elements.TitleElement;
 import page_objects.*;
@@ -12,6 +15,7 @@ import value_objects.Customer;
 import static com.codeborne.selenide.Selenide.open;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@Execution(ExecutionMode.CONCURRENT)
 public class Tests {
 
     private LoginPage logIn;
@@ -47,7 +51,7 @@ public class Tests {
     @Order(2)
     public void loginTest(){
         logIn.login();
-        Assertions.assertTrue(titleElement.isProductPage());
+        Assertions.fail(); //Assertions.assertTrue(titleElement.isProductPage());
         Log.info("Вход выполнен");
     }
 
@@ -136,6 +140,13 @@ public class Tests {
 
         Assertions.assertTrue(titleElement.isProductPage());
         Log.info("Отмена покупки прошла успешно");
+    }
+
+    @Test
+    @Order(6)
+    public void faultTest(){
+        logIn.login();
+        Assertions.fail();
     }
 
     @Test
